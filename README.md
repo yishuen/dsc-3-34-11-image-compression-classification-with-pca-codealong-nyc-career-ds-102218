@@ -7,7 +7,7 @@ In the last lesson, we looked at how PCA plays an important role in the field of
 ## Objectives
 You will be able to:
 - Apply PCA to MNIST, or a similar image based dataset
-- Inspect the effect of number of principle components on explained variance and vice versa, for image data.
+- Inspect the effect of number of principal components on explained variance and vice versa, for image data.
 - Run a classifier using PCA components and inspect the impact on classification accuracy
 
 ## MNIST DATASET
@@ -172,7 +172,7 @@ digits.data = scaler.fit_transform(digits.data)
 
 ### PCA with 95% Variance Retention
 
-Earlier, we looked an instantiating PCA with a set number of components. We can also run a PCA while defining the required amount of variance that we expect our resulting principle components to retain. This can be passed in as a value from 0 (no variance) - 1 (100% variance). Let's try it with 95% variance retention with our data and see how many components we need.  
+Earlier, we looked an instantiating PCA with a set number of components. We can also run a PCA while defining the required amount of variance that we expect our resulting principal components to retain. This can be passed in as a value from 0 (no variance) - 1 (100% variance). Let's try it with 95% variance retention with our data and see how many components we need.  
 
 ```python
 # Perform PCA 
@@ -412,7 +412,7 @@ def explainedVariance(percentage, images):
 Now we can call this function repeatedly with defined explained variance values and select an image to inspect the impact of component count on how the images appears. 
 
 ```python
-# Show image quality loss with respect to reduction in principle components
+# Show image quality loss with respect to reduction in principal components
 plt.style.use('seaborn-dark')
 plt.figure(figsize=(20,4));
 
